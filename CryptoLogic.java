@@ -27,13 +27,14 @@ public class CryptoLogic extends AppCompatActivity {
     private String word;
 
     protected void onCreate(Bundle savedInstanceState) {
-        ArrayList secretWords = new ArrayList(Arrays.asList("APPLE", "BANANA", "CHERRY"));
+        ArrayList<String> secretWords = new ArrayList(Arrays.asList("APPLE", "BANANA", "CHERRY"));
 
 
+       /* TextView shuffleTextView = (TextView) findViewById(R.id.scrambleText);
 
         int n = rand.nextInt(3) + 0;
 
-        word = secretWords.get(n).toString();
+        word = secretWords.get(n);
 
         String shuffledWord = "";
         ArrayList<String> splitWord = new ArrayList(Arrays.asList(word.split("")));
@@ -41,10 +42,9 @@ public class CryptoLogic extends AppCompatActivity {
         for (String c : splitWord)
             shuffledWord += c;
 
-        TextView shuffleTextView = (TextView) findViewById(R.id.scrambleText);
         shuffleTextView.setText(shuffledWord);
 
-
+*/
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_crypto_logic);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
