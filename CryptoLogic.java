@@ -30,7 +30,8 @@ public class CryptoLogic extends AppCompatActivity {
         ArrayList<String> secretWords = new ArrayList(Arrays.asList("APPLE", "BANANA", "CHERRY"));
 
 
-       /* TextView shuffleTextView = (TextView) findViewById(R.id.scrambleText);
+        // CREATE AFTER YOUR SUPERCLASSS
+        TextView shuffleTextView = (TextView) findViewById(R.id.scrambleText);
 
         int n = rand.nextInt(3) + 0;
 
@@ -44,7 +45,7 @@ public class CryptoLogic extends AppCompatActivity {
 
         shuffleTextView.setText(shuffledWord);
 
-*/
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_crypto_logic);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
